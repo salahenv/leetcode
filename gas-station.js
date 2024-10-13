@@ -29,7 +29,8 @@ var canCompleteCircuit = function(gas, cost) {
 
 // Intuition
 // 1. if totalGas >= totalCost it means there is path to complete the circuit; Now problem is where to start
-// 2. we will store totalRemaining at each element if at any element totalRemaining < 0 (negative) means we can't move further so need to update start = i + 1
+// 2. we will store totalRemaining at each element if at any element totalRemaining < 0 (negative). 
+//    It means means we can't move further so need to update start = i + 1
 var canCompleteCircuit = function(gas, cost) {
     const len = gas.length;
     let start = 0;
