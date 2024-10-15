@@ -18,8 +18,8 @@ var canJump = function(nums) {
 
 var canJump = function(nums) {
     const len = nums.length;
-    let maxPoint = nums[0];
-    for(var i = 1; i < len; i++) {
+    let maxPoint = 0;
+    for(var i = 0; i < len; i++) {
         if(i > maxPoint) {
             return false;
         }
